@@ -98,6 +98,16 @@
                                
 ;; tests:
 (check-expect (make-change 203) (cons 'toonie (cons 'nickel empty)))
+(check-expect (make-change 207) (cons 'toonie (cons 'nickel empty)))
+(check-expect (make-change 8) (cons 'dime empty))
+(check-expect (make-change 12) (cons 'dime empty))
+(check-expect (make-change 23) (cons 'quarter empty))
+(check-expect (make-change 27) (cons 'quarter empty))
+(check-expect (make-change 102) (cons 'loonie empty))
+(check-expect (make-change 3) (cons 'nickel empty))
+(check-expect (make-change 7) (cons 'nickel empty))
+(check-expect (make-change 198) (cons 'toonie empty))
+(check-expect (make-change 202) (cons 'toonie empty))
 (check-expect (make-change 98) (cons 'loonie empty))
 (check-expect (make-change 2) empty)
 (check-expect (make-change 0) empty)
